@@ -7,7 +7,7 @@ serves as a gateway to the rest of the ecosystem.
 ## Cloud Wallet
 
 If you registered with a username and password, you have a cloud wallet. Although
-nothing is technically stored in the cloud, we user the term Cloud Wallet because
+nothing is technically stored in the cloud, we use the term Cloud Wallet because
 you can use these credentials (username and password) from any web browser at any 
 time to gain access to your account. The cloud wallet only allows for a single 
 account to be accessed at a time. This is generally the correct choice for new users. 
@@ -29,7 +29,7 @@ process actually easy. See managing [backups](/help/introduction/backups).
 Rest assured that our servers do not have access to your funds because none of
 your private keys ever leave your browser. Instead, they are encrypted with your
 passphrase and are stored in your local browser's database. As such, you should
-make sure to have a proper [Backup](../introduction/backups.md) in the event
+make sure to have a proper [Backup](/help/introduction/backups) in the event
 something happens to your computer or browser.
 
 ## Management

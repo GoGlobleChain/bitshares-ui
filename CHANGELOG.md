@@ -1,4 +1,362 @@
 ---------------------------------------------------------------------
+Release 2.0.180720-rc2
+---------------------------------------------------------------------
+Bug fixes and improvements
+--------
+- Fix back/forward buttons and navigation
+- #1643: Set marketStatsQueueLength to 500
+- Fix #1682: Missing isContact in HeaderDropdown
+- Fix #1684 and some excessive Header rerendering
+
+---------------------------------------------------------------------
+Release 2.0.180720-rc1
+---------------------------------------------------------------------
+New features
+--------
+- #1613: Add feature branding (#1627)
+- #1407: Add reconnect strategy (#1633)
+
+Bug fixes and improvements
+--------
+- Various performance tweaks to render cycles
+- Fix #1671: Restore the create-worker route
+- #1510: Adding API nodes for BitsharesDEX
+- Fix #1610: Add react-scroll on account create form
+- Fix #1577 - BSIP-0030 Implementation for margin position updates
+- #1530: Fix error propagation for asset issuance
+- #1458 Update accounts dropdown label & icon (#1603)
+- List XRP and XMR Openledger assets (#1631)
+- #1106: Add a tooltip message explaining why group selection is not available
+- Fix #1529: Expiration Time tooltip in open orders (#1616)
+- Fix #1618: Vertical orderbook missing translations
+- Add missing translations (no orders, no bids) (#1617)
+- Fix #1609: React hot reload error for antd components
+
+---------------------------------------------------------------------
+Release 2.0.180629
+---------------------------------------------------------------------
+New features
+--------
+- #1484 TradingView restyle
+- #1547: Support New OPs 47 + 48
+- #1591: Add code splitting, dynamic imports
+- #1557 - Use order ID consistently
+- #1292 - Autoscroll to transaction number
+- #1496: Locking CR / Debt values for ratio selection
+- List XRP and XMR Openledger assets (#1631)
+- Add RuDEX: BTC, ETH, DGB, EOS (#1635)
+
+Bug fixes and improvements
+--------
+- #1620: Fix undefined order property (#1624)
+- Updating ru locale (#1602)
+- #1620: Order ID is not always populated
+- #1605: White screen after order creation
+- #1611: Accessing withdraw modal with no account available
+- #1612: Add contact with no account selected
+- #1538: Disable different precision error message when not creating PM
+- #1566: UI Update for BSIP-0037
+- Update TradingView lib
+- Fix #1556: Remove forced decimalOffset on Proposed Transaction
+- Fix #1532 - Generated password does not show completely
+- Fix an issue in PasswordConfirm making input imposible
+- #1584: Move to react router v4
+- #1560: Enable develop branch with automatic builds
+- #1569: Use unique memo keys when creating new accounts
+- Fix #1568: AssetName crash on non-existing asset
+- #1580 Integrate bitshares-ui-style-guide
+- #1525 - Clear Voting Proxy
+- #1555 - Market Picker fixes for improvements
+
+---------------------------------------------------------------------
+Release 2.0.180629-rc2
+---------------------------------------------------------------------
+Bug fixes and improvements
+--------
+- #1605: White screen after order creation
+- #1611: Accessing withdraw modal with no account available
+- #1612: Add contact with no account selected
+
+---------------------------------------------------------------------
+Release 2.0.180629-rc1
+---------------------------------------------------------------------
+New features
+--------
+- #1484 TradingView restyle
+- #1547: Support New OPs 47 + 48
+- #1591: Add code splitting, dynamic imports
+- #1557 - Use order ID consistently
+- #1292 - Autoscroll to transaction number
+- #1496: Locking CR / Debt values for ratio selection
+
+Bug fixes and improvements
+--------
+- #1538: Disable different precision error message when not creating PM
+- #1566: UI Update for BSIP-0037
+- Update TradingView lib
+- Fix #1556: Remove forced decimalOffset on Proposed Transaction
+- Fix #1532 - Generated password does not show completely
+- Fix an issue in PasswordConfirm making input imposible
+- #1584: Move to react router v4
+- #1560: Enable develop branch with automatic builds
+- #1569: Use unique memo keys when creating new accounts
+- Fix #1568: AssetName crash on non-existing asset
+- #1580 Integrate bitshares-ui-style-guide
+- #1525 - Clear Voting Proxy
+- #1555 - Market Picker fixes for improvements
+
+---------------------------------------------------------------------
+Release 2.0.180525
+---------------------------------------------------------------------
+New features
+--------
+- Push new staging builds to https://staging.bitshares.org using Travis
+- #905: Replace react-stockcharts with TradingView charts
+- #1512: Add QR scanner on withdraw (beta)
+- #1448: Display walkthrough when user opens exchange for the first time
+- #1447: Implement popup hint message for Icons all around the UI
+- #1482: Revamped and improved Proposed Transactions tab
+
+Bug fixes and improvements
+--------
+- List some open assets from Openledger (#1554)
+- #1184: React v16 upgrade
+- #1502: Remove HighStock imports as it is no longer needed
+- #1502: Update lodash to v4
+- #1502: Webpack v4 upgrade
+- Fix #1527: Sort orderbook asks properly
+- Fix #1533
+- #1534: Use correct asset precision for Core Exchange Rate update
+- #1535: Enable asset links in transactions
+- Fix #1528: Proposed transactions not updating properly in the ChainStore
+- #1507: Withdraw/Deposit Modal Fixes
+- Fix #1517: Remove hardcoded network fee percentage
+- Fix #1397: Order Expiration Date bug
+- Added DGB, SCR, HERTZ images
+- Update Russian locale file
+- Fix #1516: Exchange header tooltip issue
+- #1515: Add script to fix all locale files
+
+---------------------------------------------------------------------
+Release 2.0.180509
+---------------------------------------------------------------------
+New features
+--------
+- #1475: Add a textbox to the slider in the collateral borrowing section
+- #1369 display market fee percent for sells
+- #1379: Add Market Picker
+- #1276: Enable GDEX gateway
+- #1463: Handle non-existant assets in exchange and asset pages
+- Update bitsharesjs to enable new orders api
+- #1288 - Extract FundFeePool from AccountAssetUpdate and use it in Asset
+- Added titles to all areas of the app to improve history navigation
+
+Bug fixes and improvements
+--------
+- Update electron and electron-builder
+- #1475: Fix warning text and button overlap
+- Fix a text overflow issue in AccessSettings hover popup
+- #1478: Set version in package.json instead of git tag
+- #1481: Fix checkFeeStatusAsync duplicate asset resolution issues with BTS
+- #1469 display market fee precision
+- Fix #1328: Portfolio price/value sorting
+- Performance fix: don't update AccountStore state when no changes are made
+- Added ExchangeHeader Selected Asset Highlight
+- Fix #1464: Refactor MarketStatsCheck and marketUtils to use direct route
+- #1446: Showing "Switch Node" popup only on node description hover
+- Fix willTransitionTo onResetError method
+- Fix #1455
+- Fix #1406: Use higher precision ints for getSqueezePrice
+- Fix #1432, also fixes a balance lookup bug
+- Remove unused code in tcomb_structs
+- Remove pulsate on BalanceValueComponent
+- Fix removal of personal nodes
+- Fix #1451: Restore pub key support to AccountSelector
+- Limited a greedy regex that was wiping out the asset decription
+- Replace extremely heavy steem lib with lightweight steem-js-api fork
+
+---------------------------------------------------------------------
+Release 2.0.180418
+---------------------------------------------------------------------
+New features
+--------
+- #1372 Node Switcher Design Pattern
+- #1396 - Full Date in Account Transaction
+- #1275: Withdraw/Deposit Modal - Add Winex Support
+- #1223: Access Node Popup / Access Nodes List
+
+Bug fixes and improvements
+--------
+- routerTransition refactor, improvements to connectionn logic
+- Fix #1395: Issue asset button not working
+- Fix #1420: Preferred Market Pairing Resets to null
+- #1244: Cleaning up Backend API calls to outside gateways and bridges
+- Filter nodes in AccessSettings to fix key warning
+- Update russian translations
+- Fix possible undefined error in AccountOverview
+- Add several witness-provuided API servers
+- Fix #1388
+- Fix #1367: Restore missing Linux launcher icon
+- Add a phishing account
+
+---------------------------------------------------------------------
+Release 2.0.180402
+---------------------------------------------------------------------
+Bug fixes and improvements
+--------
+- Fixes to AccountSelector and IssueModal
+- Fix #1376: Hide expiration for margin calls in My Orders
+- Fix #1374: Incorrect CSP making the logo not load
+- Fix #1373: AccountStore init console errors
+
+---------------------------------------------------------------------
+Release 2.0.180401
+---------------------------------------------------------------------
+New features
+--------
+- #1223 - Access Node Popup / Access Nodes List
+- #1190: Show incognito warning for wallet users
+- #1331: Add Page 404
+- #1343: Reduce bundle size by ~30%
+
+Bug fixes and improvements
+--------
+- #999 Add QRScanner component
+- #999 Update Content-Security-Policy to support camera capture
+- #999 Add https server for local development
+- #999 Add react-qr-reader package
+- #1371: Show 404 page for non-existing accounts
+- #1342: Add asset_claim_fees in fee schedule
+- #1344- Remove references to transwiser
+- Cleanup Transfer, SendModal and AccountSelector following #1340
+- #1190: Fix incognito warning wallet mode detection, modify warning
+- #1341 and #1364: Fix fetching of vote ids
+- Fix #1364: Sort active committee members array from API
+- Resolve tab index issue in find markets
+- #1331 Store last expiration on localStorage
+- #1331 Display Expiration DatePicker above field
+- #1331 Add 1 year option and make it as default
+- #1338: Set set_subscribe_callback boolean to false
+- Fix #1349: Use new get_all_workers API to fetch workers
+- Added Japanese translation for #1335
+- Added Openledger component and minor context fix
+- #984: Enabled Buy/Sell widgets on Exchange
+- #1283: Fix wallet unlock behavior
+- UI Fixes for Borrow modal (#1327)
+
+---------------------------------------------------------------------
+Release 2.0.180315
+---------------------------------------------------------------------
+New features
+--------
+- #1258 Add ability to sort Portfolio by QTY
+- #1303 Tabs change for asset update
+- #1191 Add 'MaximizeDebt' button to Borrow modal
+- #1271 Add an ability to filter portfolio by asset name
+- #1256 Add an ability to star markets on dashboard
+- #1265 Fix accounts list toggle
+- #450 Add transaction id to account activity
+- #17: Set custom expiration time for orders
+- Add Sweden API node
+- #1277: Min deposit limit message
+- #981: Send modal alert on known scammer accounts
+- #1287: Add new RUDEX tokens and icons
+- #1280: Add Russia API node
+- Support gxs asset and add asset symbols
+
+Bug fixes and improvements
+--------
+- #984: Enable header menu items for all accounts
+- Fix #1272: Workaround for routerTransition being called multiple times
+- Fix #1281 and other references to bit assets
+- Update bitsharesjs for better handling of incoming proposed transactions
+- #1243: Translation fixes
+- Fix broken asset/gateway logic
+- #1278: Tab subtext disappears when collapsed
+- #1260: Reduce renders due to asset dynamic data updates
+- #1250: Modal theme fixes
+- #1251: Modal fixes
+- #1247: Allow wallet to connect to hidden nodes when none other are available
+- Update electron and electron-builder
+
+---------------------------------------------------------------------
+Release 2.0.180302
+---------------------------------------------------------------------
+New features
+--------
+- #588: New withdrawal modal
+- #1142: New dashboard layout
+- #691: Portfolio pulse on price change
+- #1189: Japanese translation
+- #1002: Visual representation of asset allocation
+
+Bug fixes
+--------
+- Fix for margin positions modal not showing existing positions
+- Improve explorer block fetching, reduce ops displayed
+- Fix bug in Orderbook when horizontal
+- Fix #1240: Reduce the ChainStore dispatch frequency and improve BindToChainState performance
+- Fix #1239: Don't defer market stats fetching
+- Fix Tab color for Nodes #1236
+- #1229: Memoize and cache certain calls in BlocktradesMethods
+- #1179: Open dropdown when clicking on chevron
+- Fix Issue #1179
+- Fix #1220: Force one market direction for stats checks
+- #1149: Fix latency overlapping
+- #1133: Add ability to turn off autoscroll
+- Fix Issue #1195 - Asset Equivalent Price Issue
+- Fix ##1219: Incorrect feed prices break the exchange page
+- #1199: Modal theme issues
+- Fix error in url assignment
+- Fix #1070: Asset search
+- #995: Remove 'sign as owner' in account update
+- Fix #1201: Settings redirection
+
+---------------------------------------------------------------------
+Release 2.0.180215
+---------------------------------------------------------------------
+New features
+--------
+- #686: Browser notifications for transfers
+- #904: Implement Settings UX
+- Page walkthrough guides implemented for #1139
+- #359: Added green pulsing buy button when BTS is under 1 BTS
+- Nodes hiding functionality (#1148)
+- #1091: Display Accounts ID on Accounts Page
+- #1061: Deduct Hidden Assets from Portolio Total and provide Total for Hidden
+- #776 add force settlement offset and delay to asset page (#1123)
+
+Bug fixes
+--------
+- #1130: Contacts page bugs and improvements
+- Fix styles of hidden accounts divider #1130
+- Fix issues with colours after changes in PR #1143
+- Deduct hiddenAssets from Header Account Balance #1061
+- Add valid accounts to AccountSelector typeahead for selection #993
+- #993: Enable reset of search for TypeAhead component
+- Fix #1147: Make sure backup filename is converted to lowercase
+- Help pages for #1107
+- Update steem package, fix #887
+- Remove duplicate API node entry
+- Fix Issue #889
+- Use native font family for active/hidden bold (#1128)
+- Add total balance for Hidden assets table #1061
+- Deduct hidden assets balance from total portfolio balance #1061
+- Enable deposit/withdraw links for cloud model accounts while unlocked
+- Fix issue with FormattedPrice decimals
+- Add minimal deposit warning (#1122)
+- Fix Settlement / Feed Price (#1113)
+- #1099 - Tweak account active/hidden styling
+- Fix some Exchange warnings
+- Fix for Winex gateway not generating addresses properly
+- Implemented updated UI styles
+- Fix for the asset page where unwanted wrapping occurs when there isn't a market description
+- Fixed some more typos in the German translation
+- Added colspan to fix issue with daily budget on active worker proposal
+- Removed round edges from the side of input touching the copy button.
+- Update winex gateway，need to manually get deposit address
+
+---------------------------------------------------------------------
 Release 2.0.180115
 ---------------------------------------------------------------------
 New features

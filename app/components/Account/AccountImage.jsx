@@ -1,14 +1,22 @@
 import React from "react";
 import Identicon from "./Identicon";
-import {PropTypes, Component} from "react";
+import {Component} from "react";
+import PropTypes from "prop-types";
+import utils from "common/utils";
 
 class AccountImage extends Component {
+    shouldComponentUpdate(np) {
+        return !utils.are_equal_shallow(np, this.props);
+    }
+
     render() {
         let {account, image, style} = this.props;
         let {height, width} = this.props.size;
-        let custom_image = image ?
-            <img src={image} height={height + "px"} width={width + "px"}/> :
-            <Identicon id={account} account={account} size={this.props.size}/>;
+        let custom_image = image ? (
+            <img src={image} height={height + "px"} width={width + "px"} />
+        ) : (
+            <Identicon id={account} account={account} size={this.props.size} />
+        );
 
         return (
             <div style={style} className="account-image">
